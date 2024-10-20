@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # OMS service definition
+  oms:
+    build:
+      context: ./order_management  # Path to the OMS Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./order_management:/app  # Bind mount the local code
+    ports:
+      - "8000:8000"  # Expose the OMS service on port 8001
+
+  # TMS service definition
+  tms:
+    build:
+      context: ./trade_management  # Path to the TMS Dockerfile
+    command: python manage.py runserver 0.0.0.0:8002
+    volumes:
+      - ./trade_management:/app  # Bind mount the local code
+    ports:
+      - "8002:8002"  # Expose the TMS service on port 8002

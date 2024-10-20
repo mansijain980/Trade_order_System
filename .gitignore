@@ -1,0 +1,66 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+media/
+
+# If you're using Redis for caching or as a message broker
+dump.rdb
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+.tenv
+tenv/
+.temv/
+.env/
+.env
+# Settings and local environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE or editor settings
+.vscode/
+.idea/
+
+# Redis related
+redis/
+
+# Static files
+/static/
+staticfiles/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# MySQL or PostgreSQL database dumps
+*.sql
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# macOS specific
+.DS_Store
+
+# pip dependency manager files
+pip-log.txt
+pip-delete-this-directory.txt
